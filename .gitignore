@@ -1,0 +1,112 @@
+# BeautyWebcam .gitignore
+# 
+# This file excludes build artifacts, system files, and other 
+# files that shouldn't be tracked in version control.
+
+# Build Artifacts
+build/
+dist/
+*.o
+*.a
+*.app
+*.dSYM/
+*.xcarchive
+
+# Distribution Files
+*.zip
+*.dmg
+*.pkg
+*.ipa
+
+# macOS System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Xcode User Data
+*.xcuserdata
+*.xcuserdatad
+xcuserdata/
+*.perspectivev3
+*.pbxuser
+*.mode1v3
+*.mode2v3
+
+# Xcode Workspace & Project User Settings
+*.xcworkspace/xcuserdata/
+*.xcworkspace/xcshareddata/
+project.xcworkspace/
+*.swiftpm/xcode/
+
+# DerivedData (Xcode build cache)
+DerivedData/
+
+# Carthage
+Carthage/Build/
+Carthage/Checkouts/
+
+# CocoaPods
+Pods/
+*.podlock
+
+# Swift Package Manager
+.build/
+Package.resolved
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs & Debugging
+*.log
+*.crash
+*.ips
+
+# Temporary Files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Code Signing
+*.mobileprovision
+*.p12
+*.cer
+*.certSigningRequest
+
+# Other
+.env
+.env.local
+.env.*.local
+
+# Performance Testing
+*.trace
+*.dtps
+
+# Documentation Build
+docs/build/
+
+# Backup Files
+*.bak
+*.backup
+*~.nib
+
+# Core Data
+*.mom
+*.momd
+*.omo
+
+# Git Patches
+*.patch
+*.diff
+
+# Auto-generated Files
+*_versions.plist
+version.plist
