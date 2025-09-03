@@ -101,13 +101,28 @@ static os_log_t bw_preview_window_log(void) {
 }
 
 - (void)hidePreviewWindow {
+    os_log_info(bw_preview_window_log(), "🔥 DEBUG: hidePreviewWindow called - STARTING SHUTDOWN SEQUENCE");
+    
     // Stop preview
     [self.previewView stopPreview];
+    os_log_info(bw_preview_window_log(), "🔥 DEBUG: Preview view stopped");
+    
+    // 🎯 OPTIMIZATION: Stop camera when preview closes to save CPU/battery
+    if (self.applicationCoordinator) {
+        os_log_info(bw_preview_window_log(), "🔥 DEBUG: About to call stopVideoProcessing...");
+        // Stop video processing to save resources
+        [self.applicationCoordinator stopVideoProcessing];
+        os_log_info(bw_preview_window_log(), "🔥 DEBUG: stopVideoProcessing completed");
+        os_log_info(bw_preview_window_log(), "📹 Camera stopped to save resources when preview closed");
+    } else {
+        os_log_error(bw_preview_window_log(), "🔥 DEBUG ERROR: applicationCoordinator is NIL!");
+    }
     
     // Hide window
     [self.window orderOut:nil];
+    os_log_info(bw_preview_window_log(), "🔥 DEBUG: Window hidden");
     
-    os_log_info(bw_preview_window_log(), "🛑 Preview window hidden and preview stopped");
+    os_log_info(bw_preview_window_log(), "🛑 Preview window hidden, preview stopped, camera released");
 }
 
 - (void)setApplicationCoordinator:(BWApplicationCoordinator *)applicationCoordinator {
@@ -129,15 +144,30 @@ static os_log_t bw_preview_window_log(void) {
 #pragma mark - Window Delegate
 
 - (void)windowWillClose:(NSNotification *)notification {
+    os_log_info(bw_preview_window_log(), "🔥 DEBUG: windowWillClose called - USER CLOSED WINDOW");
+    
     // Stop preview when window is closed
     [self.previewView stopPreview];
+    os_log_info(bw_preview_window_log(), "🔥 DEBUG: Preview view stopped in windowWillClose");
     
-    os_log_info(bw_preview_window_log(), "🪟 Preview window will close, stopping preview");
+    // 🎯 OPTIMIZATION: Stop camera when window closes to save CPU/battery
+    if (self.applicationCoordinator) {
+        os_log_info(bw_preview_window_log(), "🔥 DEBUG: About to call stopVideoProcessing from windowWillClose...");
+        [self.applicationCoordinator stopVideoProcessing];
+        os_log_info(bw_preview_window_log(), "🔥 DEBUG: stopVideoProcessing completed from windowWillClose");
+        os_log_info(bw_preview_window_log(), "📹 Camera stopped to save resources when window closed");
+    } else {
+        os_log_error(bw_preview_window_log(), "🔥 DEBUG ERROR: applicationCoordinator is NIL in windowWillClose!");
+    }
+    
+    os_log_info(bw_preview_window_log(), "🪟 Preview window will close, preview stopped, camera released");
 }
 
 - (BOOL)windowShouldClose:(NSWindow *)sender {
+    os_log_info(bw_preview_window_log(), "🔥 DEBUG: windowShouldClose called - USER CLICKED CLOSE BUTTON");
     // Hide instead of closing completely so we can reuse the window
     [self hidePreviewWindow];
+    os_log_info(bw_preview_window_log(), "🔥 DEBUG: hidePreviewWindow completed, returning NO to prevent actual close");
     return NO;
 }
 

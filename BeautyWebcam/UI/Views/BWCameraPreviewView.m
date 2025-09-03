@@ -248,6 +248,16 @@ static os_log_t bw_preview_log(void) {
     self.showEnhancedFeed = (sender.selectedSegment == 1);
     [self updatePreviewMode];
     
+    // 🎯 CRITICAL: Tell coordinator to enable/disable processing based on preview mode
+    if (self.applicationCoordinator) {
+        // Only enable enhancement processing when Enhanced tab is selected
+        [self.applicationCoordinator setEnhancementEnabled:self.showEnhancedFeed];
+        
+        os_log_info(bw_preview_log(), "⚡ Processing optimization: %@ (mode: %@)", 
+                   self.showEnhancedFeed ? @"Enhancement ENABLED" : @"Enhancement DISABLED",
+                   self.showEnhancedFeed ? @"Enhanced" : @"Original");
+    }
+    
     os_log_info(bw_preview_log(), "🔄 Preview mode changed to: %@", 
                self.showEnhancedFeed ? @"Enhanced" : @"Original");
 }

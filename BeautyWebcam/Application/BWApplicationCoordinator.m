@@ -191,15 +191,22 @@ static os_log_t bw_coordinator_log(void) {
 }
 
 - (void)stopVideoProcessing {
+    os_log_info(bw_coordinator_log(), "🔥 DEBUG: stopVideoProcessing called - STOPPING ALL VIDEO PROCESSING");
     os_log_info(bw_coordinator_log(), "🛑 Stopping video processing...");
     
     // Stop virtual camera streaming
+    os_log_info(bw_coordinator_log(), "🔥 DEBUG: About to stop virtual camera streaming...");
     [self.virtualCameraPlugin stopStreaming];
+    os_log_info(bw_coordinator_log(), "🔥 DEBUG: Virtual camera streaming stopped");
     os_log_info(bw_coordinator_log(), "🎬 Virtual camera streaming stopped");
     
     // Stop capture
+    os_log_info(bw_coordinator_log(), "🔥 DEBUG: About to stop camera capture...");
     [self.captureManager stopCapture];
+    os_log_info(bw_coordinator_log(), "🔥 DEBUG: Camera capture stopped");
     os_log_info(bw_coordinator_log(), "📹 Camera capture stopped");
+    
+    os_log_info(bw_coordinator_log(), "🔥 DEBUG: stopVideoProcessing COMPLETED - ALL RESOURCES SHOULD BE RELEASED");
 }
 
 #pragma mark - BWCaptureManagerDelegate
