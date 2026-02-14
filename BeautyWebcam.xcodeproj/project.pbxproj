@@ -7,35 +7,70 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		849F66452F3FE14400819AF4 /* BWCameraPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 849F663C2F3FE14400819AF4 /* BWCameraPreviewView.m */; };
+		849F66462F3FE14400819AF4 /* BWWindowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 849F66432F3FE14400819AF4 /* BWWindowManager.m */; };
+		849F66472F3FE14400819AF4 /* BWSettingsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849F66412F3FE14400819AF4 /* BWSettingsWindowController.m */; };
+		849F66482F3FE14400819AF4 /* BWPreviewWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849F663F2F3FE14400819AF4 /* BWPreviewWindowController.m */; };
+		849F66602F3FE15300819AF4 /* BWCaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 849F664A2F3FE15300819AF4 /* BWCaptureManager.m */; };
+		849F66612F3FE15300819AF4 /* BWSettingsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849F66582F3FE15300819AF4 /* BWSettingsWindowController.m */; };
+		849F66622F3FE15300819AF4 /* BWCameraPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 849F66532F3FE15300819AF4 /* BWCameraPreviewView.m */; };
+		849F66632F3FE15300819AF4 /* BWPreviewWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849F66562F3FE15300819AF4 /* BWPreviewWindowController.m */; };
+		849F66642F3FE15300819AF4 /* BWWindowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 849F665A2F3FE15300819AF4 /* BWWindowManager.m */; };
+		849F66652F3FE15300819AF4 /* BWVirtualCameraPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 849F665E2F3FE15300819AF4 /* BWVirtualCameraPlugin.m */; };
+		849F66662F3FE15300819AF4 /* BWVideoProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 849F664D2F3FE15300819AF4 /* BWVideoProcessor.m */; };
+		849F66672F3FE15300819AF4 /* BWMenuBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 849F66502F3FE15300819AF4 /* BWMenuBarManager.m */; };
 		A1000001000000000000001 /* BWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1000002000000000000001 /* BWAppDelegate.m */; };
 		A1000003000000000000001 /* BWApplicationCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = A1000004000000000000001 /* BWApplicationCoordinator.m */; };
 		A1000005000000000000001 /* BWMenuBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A1000006000000000000001 /* BWMenuBarManager.m */; };
 		A1000007000000000000001 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1000008000000000000001 /* main.m */; };
-		A1000015000000000000001 /* BWCaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A1000016000000000000001 /* BWCaptureManager.m */; };
 		A1000009000000000000001 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1000010000000000000001 /* Cocoa.framework */; };
 		A1000011000000000000001 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1000012000000000000001 /* AVFoundation.framework */; };
 		A1000013000000000000001 /* CoreMediaIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1000014000000000000001 /* CoreMediaIO.framework */; };
-		A1000017000000000000001 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1000018000000000000001 /* Metal.framework */; };
-		A1000019000000000000001 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1000020000000000000001 /* MetalKit.framework */; };
+		A1000015000000000000001 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1000016000000000000001 /* Metal.framework */; };
+		A1000017000000000000001 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1000018000000000000001 /* MetalKit.framework */; };
 		A1000019000000000000001 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1000020000000000000001 /* CoreImage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A1000021000000000000001 /* BeautyWebcam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeautyWebcam.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1000022000000000000001 /* BWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BWAppDelegate.h; sourceTree = "<group>"; };
+		849F663B2F3FE14400819AF4 /* BWCameraPreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BWCameraPreviewView.h; sourceTree = "<group>"; };
+		849F663C2F3FE14400819AF4 /* BWCameraPreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BWCameraPreviewView.m; sourceTree = "<group>"; };
+		849F663E2F3FE14400819AF4 /* BWPreviewWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BWPreviewWindowController.h; sourceTree = "<group>"; };
+		849F663F2F3FE14400819AF4 /* BWPreviewWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BWPreviewWindowController.m; sourceTree = "<group>"; };
+		849F66402F3FE14400819AF4 /* BWSettingsWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BWSettingsWindowController.h; sourceTree = "<group>"; };
+		849F66412F3FE14400819AF4 /* BWSettingsWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BWSettingsWindowController.m; sourceTree = "<group>"; };
+		849F66422F3FE14400819AF4 /* BWWindowManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BWWindowManager.h; sourceTree = "<group>"; };
+		849F66432F3FE14400819AF4 /* BWWindowManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BWWindowManager.m; sourceTree = "<group>"; };
+		849F66492F3FE15300819AF4 /* BWCaptureManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BWCaptureManager.h; sourceTree = "<group>"; };
+		849F664A2F3FE15300819AF4 /* BWCaptureManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BWCaptureManager.m; sourceTree = "<group>"; };
+		849F664C2F3FE15300819AF4 /* BWVideoProcessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BWVideoProcessor.h; sourceTree = "<group>"; };
+		849F664D2F3FE15300819AF4 /* BWVideoProcessor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BWVideoProcessor.m; sourceTree = "<group>"; };
+		849F664F2F3FE15300819AF4 /* BWMenuBarManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BWMenuBarManager.h; sourceTree = "<group>"; };
+		849F66502F3FE15300819AF4 /* BWMenuBarManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BWMenuBarManager.m; sourceTree = "<group>"; };
+		849F66522F3FE15300819AF4 /* BWCameraPreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BWCameraPreviewView.h; sourceTree = "<group>"; };
+		849F66532F3FE15300819AF4 /* BWCameraPreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BWCameraPreviewView.m; sourceTree = "<group>"; };
+		849F66552F3FE15300819AF4 /* BWPreviewWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BWPreviewWindowController.h; sourceTree = "<group>"; };
+		849F66562F3FE15300819AF4 /* BWPreviewWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BWPreviewWindowController.m; sourceTree = "<group>"; };
+		849F66572F3FE15300819AF4 /* BWSettingsWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BWSettingsWindowController.h; sourceTree = "<group>"; };
+		849F66582F3FE15300819AF4 /* BWSettingsWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BWSettingsWindowController.m; sourceTree = "<group>"; };
+		849F66592F3FE15300819AF4 /* BWWindowManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BWWindowManager.h; sourceTree = "<group>"; };
+		849F665A2F3FE15300819AF4 /* BWWindowManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BWWindowManager.m; sourceTree = "<group>"; };
+		849F665D2F3FE15300819AF4 /* BWVirtualCameraPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BWVirtualCameraPlugin.h; sourceTree = "<group>"; };
+		849F665E2F3FE15300819AF4 /* BWVirtualCameraPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BWVirtualCameraPlugin.m; sourceTree = "<group>"; };
 		A1000002000000000000001 /* BWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BWAppDelegate.m; sourceTree = "<group>"; };
-		A1000023000000000000001 /* BWApplicationCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BWApplicationCoordinator.h; sourceTree = "<group>"; };
 		A1000004000000000000001 /* BWApplicationCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BWApplicationCoordinator.m; sourceTree = "<group>"; };
-		A1000024000000000000001 /* BWMenuBarManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BWMenuBarManager.h; sourceTree = "<group>"; };
 		A1000006000000000000001 /* BWMenuBarManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BWMenuBarManager.m; sourceTree = "<group>"; };
 		A1000008000000000000001 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A1000025000000000000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1000010000000000000001 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		A1000012000000000000001 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A1000014000000000000001 /* CoreMediaIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMediaIO.framework; path = System/Library/Frameworks/CoreMediaIO.framework; sourceTree = SDKROOT; };
 		A1000016000000000000001 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		A1000018000000000000001 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
 		A1000020000000000000001 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		A1000021000000000000001 /* BeautyWebcam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeautyWebcam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1000022000000000000001 /* BWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BWAppDelegate.h; sourceTree = "<group>"; };
+		A1000023000000000000001 /* BWApplicationCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BWApplicationCoordinator.h; sourceTree = "<group>"; };
+		A1000024000000000000001 /* BWMenuBarManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BWMenuBarManager.h; sourceTree = "<group>"; };
+		A1000025000000000000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +90,96 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		849F663D2F3FE14400819AF4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				849F663B2F3FE14400819AF4 /* BWCameraPreviewView.h */,
+				849F663C2F3FE14400819AF4 /* BWCameraPreviewView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		849F66442F3FE14400819AF4 /* Windows */ = {
+			isa = PBXGroup;
+			children = (
+				849F663E2F3FE14400819AF4 /* BWPreviewWindowController.h */,
+				849F663F2F3FE14400819AF4 /* BWPreviewWindowController.m */,
+				849F66402F3FE14400819AF4 /* BWSettingsWindowController.h */,
+				849F66412F3FE14400819AF4 /* BWSettingsWindowController.m */,
+				849F66422F3FE14400819AF4 /* BWWindowManager.h */,
+				849F66432F3FE14400819AF4 /* BWWindowManager.m */,
+			);
+			path = Windows;
+			sourceTree = "<group>";
+		};
+		849F664B2F3FE15300819AF4 /* Capture */ = {
+			isa = PBXGroup;
+			children = (
+				849F66492F3FE15300819AF4 /* BWCaptureManager.h */,
+				849F664A2F3FE15300819AF4 /* BWCaptureManager.m */,
+			);
+			path = Capture;
+			sourceTree = "<group>";
+		};
+		849F664E2F3FE15300819AF4 /* Processing */ = {
+			isa = PBXGroup;
+			children = (
+				849F664C2F3FE15300819AF4 /* BWVideoProcessor.h */,
+				849F664D2F3FE15300819AF4 /* BWVideoProcessor.m */,
+			);
+			path = Processing;
+			sourceTree = "<group>";
+		};
+		849F66512F3FE15300819AF4 /* MenuBar */ = {
+			isa = PBXGroup;
+			children = (
+				849F664F2F3FE15300819AF4 /* BWMenuBarManager.h */,
+				849F66502F3FE15300819AF4 /* BWMenuBarManager.m */,
+			);
+			path = MenuBar;
+			sourceTree = "<group>";
+		};
+		849F66542F3FE15300819AF4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				849F66522F3FE15300819AF4 /* BWCameraPreviewView.h */,
+				849F66532F3FE15300819AF4 /* BWCameraPreviewView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		849F665B2F3FE15300819AF4 /* Windows */ = {
+			isa = PBXGroup;
+			children = (
+				849F66552F3FE15300819AF4 /* BWPreviewWindowController.h */,
+				849F66562F3FE15300819AF4 /* BWPreviewWindowController.m */,
+				849F66572F3FE15300819AF4 /* BWSettingsWindowController.h */,
+				849F66582F3FE15300819AF4 /* BWSettingsWindowController.m */,
+				849F66592F3FE15300819AF4 /* BWWindowManager.h */,
+				849F665A2F3FE15300819AF4 /* BWWindowManager.m */,
+			);
+			path = Windows;
+			sourceTree = "<group>";
+		};
+		849F665C2F3FE15300819AF4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				849F66512F3FE15300819AF4 /* MenuBar */,
+				849F66542F3FE15300819AF4 /* Views */,
+				849F665B2F3FE15300819AF4 /* Windows */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		849F665F2F3FE15300819AF4 /* VirtualCamera */ = {
+			isa = PBXGroup;
+			children = (
+				849F665D2F3FE15300819AF4 /* BWVirtualCameraPlugin.h */,
+				849F665E2F3FE15300819AF4 /* BWVirtualCameraPlugin.m */,
+			);
+			path = VirtualCamera;
+			sourceTree = "<group>";
+		};
 		A1000027000000000000001 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +192,10 @@
 		A1000028000000000000001 /* BeautyWebcam */ = {
 			isa = PBXGroup;
 			children = (
+				849F664B2F3FE15300819AF4 /* Capture */,
+				849F664E2F3FE15300819AF4 /* Processing */,
+				849F665C2F3FE15300819AF4 /* UI */,
+				849F665F2F3FE15300819AF4 /* VirtualCamera */,
 				A1000031000000000000001 /* Application */,
 				A1000032000000000000001 /* UI */,
 				A1000008000000000000001 /* main.m */,
@@ -110,6 +239,8 @@
 		A1000032000000000000001 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				849F663D2F3FE14400819AF4 /* Views */,
+				849F66442F3FE14400819AF4 /* Windows */,
 				A1000033000000000000001 /* MenuBar */,
 			);
 			path = UI;
@@ -191,8 +322,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849F66602F3FE15300819AF4 /* BWCaptureManager.m in Sources */,
+				849F66612F3FE15300819AF4 /* BWSettingsWindowController.m in Sources */,
+				849F66622F3FE15300819AF4 /* BWCameraPreviewView.m in Sources */,
+				849F66632F3FE15300819AF4 /* BWPreviewWindowController.m in Sources */,
+				849F66642F3FE15300819AF4 /* BWWindowManager.m in Sources */,
+				849F66652F3FE15300819AF4 /* BWVirtualCameraPlugin.m in Sources */,
+				849F66662F3FE15300819AF4 /* BWVideoProcessor.m in Sources */,
+				849F66672F3FE15300819AF4 /* BWMenuBarManager.m in Sources */,
 				A1000001000000000000001 /* BWAppDelegate.m in Sources */,
 				A1000003000000000000001 /* BWApplicationCoordinator.m in Sources */,
+				849F66452F3FE14400819AF4 /* BWCameraPreviewView.m in Sources */,
+				849F66462F3FE14400819AF4 /* BWWindowManager.m in Sources */,
+				849F66472F3FE14400819AF4 /* BWSettingsWindowController.m in Sources */,
+				849F66482F3FE14400819AF4 /* BWPreviewWindowController.m in Sources */,
 				A1000005000000000000001 /* BWMenuBarManager.m in Sources */,
 				A1000007000000000000001 /* main.m in Sources */,
 			);
